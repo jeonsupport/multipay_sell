@@ -120,22 +120,18 @@
                         
                     $strHtml = "";
                     if($rowCount!=0) { // 답글 있는 경우
-                        $strHtml .= "<tbody>";
-                        $strHtml .= "<tr>";
+                        $strHtml .= "<tr class=\"half\">";
                         $strHtml .= "<th scope=\"row\">등록일</th>";
                         $strHtml .= "<td>$reg_date</td>";
-                        $strHtml .= "</tr>";
-                        $strHtml .= "<tr>";
-                        $strHtml .= "<th scope=\"row\">작성자</th>";
+                        $strHtml .= "<th>작성자</th>";
                         $strHtml .= "<td>$writer</td>";
                         $strHtml .= "</tr>";
                         $strHtml .= "<tr>";
-                        $strHtml .= "<th scope=\"row\">내용</th>";
-                        $strHtml .= "<td class=\"article-text\">";
+                        $strHtml .= "<th>내용</th>";
+                        $strHtml .= "<td colspan=\"3\" class=\"article-text\">";
                         $strHtml .= "<pre>$contents</pre>";
                         $strHtml .= "</td>";
                         $strHtml .= "</tr>";
-                        $strHtml .= "</tbody>";
 
                         echo $strHtml;
                     }
