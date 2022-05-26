@@ -98,12 +98,12 @@
                 </tr>
                 <tr>
                     <th>내용</th>
-                    <td colspan="3" class="article-text">
+                    <td colspan="3">
                         <pre><?=$contents?></pre>
                     </td>
                 </tr>
             </table>
-            <p class="reply">답글</p>
+            <!-- <p class="reply">답글</p> -->
             <table>
                 <?php
 
@@ -120,6 +120,7 @@
                         
                     $strHtml = "";
                     if($rowCount!=0) { // 답글 있는 경우
+                        $strHtml .= "<p class=\"reply\">답글</p>";
                         $strHtml .= "<tr class=\"half\">";
                         $strHtml .= "<th scope=\"row\">등록일</th>";
                         $strHtml .= "<td>$reg_date</td>";
@@ -127,8 +128,8 @@
                         $strHtml .= "<td>$writer</td>";
                         $strHtml .= "</tr>";
                         $strHtml .= "<tr>";
-                        $strHtml .= "<th>내용</th>";
-                        $strHtml .= "<td colspan=\"3\" class=\"article-text\">";
+                        $strHtml .= "<th>답글 내용</th>";
+                        $strHtml .= "<td colspan=\"3\">";
                         $strHtml .= "<pre>$contents</pre>";
                         $strHtml .= "</td>";
                         $strHtml .= "</tr>";
@@ -139,7 +140,7 @@
             </table>
         </div>
         <div class="btnBox">
-            <button type="button" onclick="location.href='qna.php<?=$back_url?>'">목록</button>
+            <button type="button" class="color01" onclick="location.href='qna.php<?=$back_url?>'">목록</button>
         </div>
     </div>
 </section>

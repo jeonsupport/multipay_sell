@@ -54,6 +54,7 @@ section.cont .contSubmit .searchBox button{padding:0;margin: 0 10px;background:v
 .tableBox table tr.tbody:hover{background:#fafafa}
 .btnBox{display:flex;width:100%;justify-content:flex-end;margin:0 0 60px;}
 .btnBox button{width: 110px;height: 50px;margin: 0 5px;box-shadow:3px 5px 10px #00000020;border-radius:10px;background: #fff;border:1px solid #333;}
+.btnBox button.color01{background:#aaa;border:0;color:#fff;}
 .passBox{width: 100%;max-width: 400px;margin: 80px auto 150px;height: 300px;}
 .passBox form{width:100%;height:100%;}
 .passBox ul{display:flex;flex-direction: column;padding:20px;justify-content:space-between;height:100%;}
@@ -67,12 +68,14 @@ section.cont .contSubmit .searchBox button{padding:0;margin: 0 10px;background:v
 .writeBox table{border-top:2px solid #ccc;width:100%;}
 .writeBox table tr{border-bottom:1px solid #ddd;width:100%;}
 .writeBox table tr th{text-align:center;white-space:nowrap;font-weight:400;color:#aaa;padding:10px 0;}
-.writeBox table tr td{text-align:left}
+.writeBox table tr td{text-align:left;padding: 10px;}
 .writeBox table tr td input{cursor:auto}
 .writeBox table tr th:nth-of-type(even){border-left:1px solid #ddd;}
 .writeBox table tr.half th{width:15%;}
 .writeBox table tr.half td{width:35%;}
 .writeBox p.reply{background: var(--p-danger);color: #fff;padding: 5px 15px;border-radius: 7px;display: inline-block;margin: 50px 10px 10px;}
+/* .writeBox > textarea{display:inline-block;width:90%;border:none;padding:5px;height:auto;float:left} */
+/* .writeBox > button{display:inline-block;width:10%;height:100%;background:#7b7b7b;color:#fff;float:right;font-size:15px} */
 
 .contSubmit.qna table tr td:nth-of-type(1){width:10%;}
 .contSubmit.qna table tr td:nth-of-type(2){width:60%;text-align:left;}
@@ -554,9 +557,6 @@ tfoot td:first-child{border-left:0}
 .t_list tbody td:last-child,
 tfoot th:last-child,
 tfoot td:last-child{border-right:0}
-.article-text > pre{font-size:15px}
-.article-text > textarea{display:inline-block;width:90%;border:none;padding:5px;height:auto;float:left}
-.article-text > button{display:inline-block;width:10%;height:100%;background:#7b7b7b;color:#fff;float:right;font-size:15px}
 
 
 
