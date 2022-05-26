@@ -96,57 +96,47 @@
 
 <html lang="ko">
 <?php include('layout/header.php');?>
-<section class="sub_bo_Wrap">
-    <div class="subT_SideBox">
-        <div class="subtName">
-        <h1>입금정보</h1>
-        <h2>고객님 핸드폰으로 발송된 비밀번호로 언제나 QR 코드를 확인할 수 있습니다</h2>
-        </div>
+<section class="cont inner">
+    <div class="contTitle">
+        <h1>구매조회</h1>
+        <h2>구매 후 생성된 QR코드를 확인할 수 있습니다</h2>
     </div>
-    <div id="process_submit">
-        <div class="process_sideBox">
-            <!-- <div class="top_findBox"></div> -->
-            <div class="oi_inputArea">
-                <div class="recentTableBox">
-                    <section class="con">
-                        <div class="board">
-                            <div class="t_view">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">입금자명</th>
-                                            <td><?=$user_name?></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">입금액</th>
-                                            <td><?=number_format($real_price)?>원</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">QR코드</th>
-                                            <td class="article-text">
-                                            <?php
-                                                if ($res_flag==2 && $qr_image_url!='') {
-                                                    echo "<pre><img src='$qr_image_url'></pre>";
-                                                } else {
-                                                    echo "<pre><font color='red'>스캔을 완료하였습니다.</font></pre>";
-                                                } 
-                                            ?>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </section>
-                    <div class="btnArea">
-                        <button type="button" class="btn btn-primary fr" onclick="location.replace('process.php?<?=$back_url?>');">목록</button>
-                    </div>
-                </div>
-            </div>
+    <div class="contSubmit">
+        <div class="writeBox box">
+            <table>
+                <tr class="half">
+                    <th scope="row">번호</th>
+                    <td><?=$user_name?></td>
+                    <th>입금액</th>
+                    <td><?=number_format($real_price)?>원</td>
+                </tr>
+                <tr class="half">
+                    <th scope="row">입금자명</th>
+                    <td><?=$user_name?></td>
+                    <th>신청일</th>
+                    <td><?=$user_name?></td>
+                </tr>
+                <tr>
+                    <th>QR코드</th>
+                    <td colspan="3">
+                        
+                    <?php
+                        if ($res_flag==2 && $qr_image_url!='') {
+                            echo "<pre><img src='$qr_image_url'></pre>";
+                        } else {
+                            echo "<pre><font color='red'>스캔을 완료하였습니다.</font></pre>";
+                        } 
+                    ?>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="btnBox">
+            <button type="button" class="color01" onclick="location.replace('process.php?<?=$back_url?>');">목록</button>
         </div>
     </div>
 </section>
-
 <?php include('layout/footer.php');?>
 <script type="text/javascript">
     let detail_token = '<?=$token?>';

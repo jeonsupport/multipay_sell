@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
 <?php include('layout/header.php');?>
-<section class="sub_bo_Wrap">
-    <div class="subT_SideBox">
-        <div class="subtName">
-            <h1>이용약관</h1>
-            <h2>서비스 이용과 관련하여 필요한 사항을 규정합니다</h2>
-        </div>
+<section class="cont inner">
+    <div class="contTitle">
+        <h1>이용약관</h1>
+        <h2>서비스 이용과 관련하여 필요한 사항을 규정합니다</h2>
     </div>
-<div id="sub_submit">
-<div class="submit_sideBox">
+    <div class="contSubmit">
+        <div class="writeBox box">
 <pre>
     
 </pre>
-</div>
-</div>
+        </div>
+    </div>
 </section>
 <?php include('layout/footer.php');?>
 </html>
