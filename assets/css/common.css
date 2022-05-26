@@ -55,6 +55,7 @@ section.cont .contSubmit .searchBox button{padding:0;margin: 0 10px;background:v
 .btnBox{display:flex;width:100%;justify-content:flex-end;margin:0 0 60px;}
 .btnBox button{width: 110px;height: 50px;margin: 0 5px;box-shadow:3px 5px 10px #00000020;border-radius:10px;background: #fff;border:1px solid #333;}
 .btnBox button.color01{background:#aaa;border:0;color:#fff;}
+.btnBox button.color02{background:#333;border:0;color:#fff;}
 .passBox{width: 100%;max-width: 400px;margin: 80px auto 150px;height: 300px;}
 .passBox form{width:100%;height:100%;}
 .passBox ul{display:flex;flex-direction: column;padding:20px;justify-content:space-between;height:100%;}
@@ -63,7 +64,7 @@ section.cont .contSubmit .searchBox button{padding:0;margin: 0 10px;background:v
 .passBox ul li:last-of-type{display:inline-flex;flex-direction: row;align-items: center;justify-content:space-between;}
 .passBox ul li:last-of-type button{width:48%;height:50px;border-radius:10px;background:#fff;border:1px solid #333;}
 .passBox ul li:last-of-type button:last-of-type{color:#fff;background:#333;}
-.passBox ul li input{width: 100%;border-bottom: 1px solid #ddd;background: #fafafa;height: 50px;padding: 0 50px;border-radius: 10px;margin: 0 0 20px;}
+.passBox ul li input{width: 100%;border-bottom: 1px solid #ddd;background: #fafafa;height: 50px;padding: 0 40px;border-radius: 10px;margin: 0 0 20px;}
 .writeBox{width:100%;position:relative;padding:50px;margin: 0 0 20px;min-height:400px;}
 .writeBox table{border-top:2px solid #ccc;width:100%;}
 .writeBox table tr{border-bottom:1px solid #ddd;width:100%;}
@@ -74,6 +75,11 @@ section.cont .contSubmit .searchBox button{padding:0;margin: 0 10px;background:v
 .writeBox table tr.half th{width:15%;}
 .writeBox table tr.half td{width:35%;}
 .writeBox p.reply{background: var(--p-danger);color: #fff;padding: 5px 15px;border-radius: 7px;display: inline-block;margin: 50px 10px 10px;}
+.writeBox.writeBoxQna table tr th{width:20%;}
+.writeBox.writeBoxQna table tr td{width:80%;}
+.writeBox.writeBoxQna table tr td input{width: 100%;height: 40px;background: #fafafa;padding: 0 40px;border-radius: 10px;}
+.writeBox.writeBoxQna table tr td textarea{border:0;width: 100%;padding: 10px 40px;background: #fafafa;border-radius:10px;-webkit-appearance:none;-moz-appearance:none;appearance:none;resize:none;transition:box-shadow 0.2s ease}
+
 /* .writeBox > textarea{display:inline-block;width:90%;border:none;padding:5px;height:auto;float:left} */
 /* .writeBox > button{display:inline-block;width:10%;height:100%;background:#7b7b7b;color:#fff;float:right;font-size:15px} */
 
