@@ -43,11 +43,7 @@ select,button,input,.btn,.card{transition:all .5s}
 #scan p{color: #fff;text-align: center;font-weight: 500;font-size: 13px;background: var(--main);border-radius: 5px;padding: 5px;width: 100%;margin: 0 auto;}
 /* .ic_reply{display:inline-block!important;box-sizing:border-box;margin-left:10px;padding:5px 5px;border:1px solid var(--p);color:var(--p)!important;font-size:12px!important;text-align:center;line-height:100%!important;font-weight:400}@media screen and (max-width:770px){.ic_reply{font-size: 10px!important;padding:3px;}} */
 .ic_online{background: #f3f3f3;font-size: 11px;position: absolute;right: 0;padding: 1px 5px;border-radius: 3px;color: #aaa;}
-.ic_qr{height:54px;position: absolute;filter: drop-shadow(2px 5px 5px #00000050);left: 0;z-index:100;opacity: .9;top: 10px;width: 46px;}
-.ic_qr img{height:100%;border: 0!important;padding: 0!important;}
-@media (max-width:770px){
-    div.ic_qr{height: 45px;width: 40px;}
-}
+
 .pagination .page-link{padding:7px 14px!important;border-radius:0!important;color:#333!important;border:none!important}
 .pagination .page-link.act{background:#666!important}
 .pagination .page-item:not(:first-child) .page-link{margin-left:0!important}@media screen and (max-width:770px){ul.pagination .page-link{font-size:12px}}
