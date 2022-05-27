@@ -142,10 +142,10 @@
                                     
                                     $strListHTML = "";
                                     $strListHTML .= "<li>";
-                                    $strListHTML .= "<div class='ic_online'>온라인전용</div>";
-                                    $strListHTML .= "<div class='ic_qr'><img src='assets/img/ic_qr.png'></div>";
+                                    // $strListHTML .= "<div class='ic_online'>온라인전용</div>";
+                                    // $strListHTML .= "<div class='ic_qr'><img src='assets/img/ic_qr.png'></div>";
                                     $strListHTML .= "<div class='infor'>";
-                                    $strListHTML .= "<div class='thumb'><img src='assets/img/basket/$product_no.png' alt='$product_name' class='$product_no'></div>";
+                                    $strListHTML .= "<div class='thumb'><img src='assets/img/basket/$product_no.png' class='$product_no'></div>";
                                     $strListHTML .= "<p class='subj'><img src='assets/img/i_logo_multi.png'>$product_name<br><span>$publisher_name</span></p>";
                                     $strListHTML .= "</div>";
                                     $strListHTML .= "</li>";

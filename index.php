@@ -2,7 +2,9 @@
 <html lang="ko">
 <?php include('layout/header.php');?>
 <section class="cont home">
-    <div class="banner"><img src="assets/img/img01.gif"></div>
+    <div class="banner">
+        <img src="assets/img/img01.gif">
+    </div>
     <div class="inner">
         <h1>멀티페이의 인기 상품권</h1>
         <h2><b>HOT</b> 인기 상품권</h2>
@@ -10,11 +12,11 @@
             <ul>
                 <li>
                     <div class="ico best"><img src="assets/img/i_best.png"></div>
-                    <div class="imgTicket"><img src="assets/img/basket/1006.png"></div>
+                    <div class="imgTicket"><img src="assets/img/basket/1006_b.png"></div>
                 </li>
                 <li>
                     <div class="ico best"><img src="assets/img/i_best.png"></div>
-                    <div class="imgTicket"><img src="assets/img/basket/1008.png"></div>
+                    <div class="imgTicket"><img src="assets/img/basket/1008_b.png"></div>
                 </li>
             </ul>
         </div>
