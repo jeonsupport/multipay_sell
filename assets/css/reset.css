@@ -10,6 +10,7 @@
     --p-danger:#f2525f;
     --shadow:#00000050;
     --txt:#333333;
+    --wh:#fff;
     --font:'Spoqa Han Sans Neo','Noto Sans KR','Open Sans',sans-serif;
 }
 .inner{width:1200px;max-width:1200px;margin:auto}

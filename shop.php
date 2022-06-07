@@ -34,7 +34,6 @@
             <div class="innerWidth">
                 <div class="productWrap">
                     <h2 class="productTitle"></h2>
-
                     <div class="productPop outputBox">
                         <!-- <h2>입금 내역</h2> -->
                         <div class="outputBoxTop">
@@ -73,7 +72,6 @@
                         </table>
                         <div id="pop_qrimg"></div>
                         <button class="pop_btn" type="button" id="buy_cancel_btn" onclick="depositConfirm()">구매취소</button>
-
                         <!-- <ul> -->
                             <!-- <li>아래의 입금정보를 확인하신 후, <br><span class='highlighter01'>계좌로 입금</span>해주시기 바랍니다.</li> -->
                             <!-- <li>- 입금액<span id="pop_totPrice"></span></li> -->

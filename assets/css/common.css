@@ -19,6 +19,7 @@ footer div p:last-of-type{opacity:.5;margin:10px 0 0;}
 footer ul a:nth-of-type(3) li{font-weight:500;}
 footer div p span{margin:0 10px 0 0;opacity:.5;}
 @media (max-width:770px){
+
 }
 .ico.best{width:75px;top: 5px;left: -15px;}
 .ico{position: absolute;filter: drop-shadow(2px 5px 5px #00000050);left:-13px;z-index:100;opacity: .9;top:7px;transition:all .4s;}
@@ -27,6 +28,8 @@ footer div p span{margin:0 10px 0 0;opacity:.5;}
 @media (max-width:770px){
     div.ico.multiQr{height: 45px;width: 40px;}
 }
+.ic_qr{width:40px;}
+
 
 
 

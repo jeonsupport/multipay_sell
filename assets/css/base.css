@@ -5,7 +5,8 @@
 /* .ad img{height:100%;} */
 /* admin */ 
 .admin_btn{position:absolute;top:10%;right:0}
-#sideMenu{display:inline-flex}@media (max-width:770px){div#sideMenu{display:none}}
+/* #sideMenu{display:inline-flex} */
+@media (max-width:770px){div#sideMenu{display:none}}
 /* index */
 /* .main_wrap .subTopBox{position:relative;height:300px}
 .main_wrap .subTopBox img{height:300px}
@@ -152,12 +153,14 @@ textarea::-moz-input-placeholder{color:#aaa}
 /* shop */
 .innerWidth{position:relative;width:1220px;margin:0 auto;padding:0 20px}
 #container{height:75vh;min-height:810px;padding:20px 0 30px 0;background:#f3f3f3;z-index:2}
-#container > .innerWidth{display:flex;height:100%}
+/* #container > .innerWidth{display:flex;height:100%} */
+#container > .innerWidth{display:flex;height:100%;flex-direction:column;width:100%}
 @media (max-width:770px){
     #container{height:auto;min-height:calc(100vh - 60px);padding:0}
     #container > .innerWidth{display:block;height:auto;padding:10px;width:100%}
 }
-.resultSide{position:relative;width:340px;background:var(--wh);margin-left:20px;-webkit-box-shadow:0 0 6px 0 rgba(67, 72, 90, 0.1);-moz-box-shadow:0 0 6px 0 rgba(67, 72, 90, 0.1);box-shadow:0 0 6px 0 rgba(67, 72, 90, 0.1);padding:8px}
+/* .resultSide{position:relative;width:340px;background:var(--wh);margin-left:20px;-webkit-box-shadow:0 0 6px 0 rgba(67, 72, 90, 0.1);-moz-box-shadow:0 0 6px 0 rgba(67, 72, 90, 0.1);box-shadow:0 0 6px 0 rgba(67, 72, 90, 0.1);padding:8px} */
+.resultSide{position:relative;width:340px;background:var(--wh);padding:8px}
 .sideWrap{height:100%}
 .btnClose{display:none}
 @media (max-width:770px){
@@ -182,7 +185,8 @@ textarea::-moz-input-placeholder{color:#aaa}
 .productWrap{flex:1;display:flex;align-items:flex-start;justify-content:flex-start;z-index:999}
 .productList{-webkit-overflow-scrolling:touch;width:100%}
 .productList ul.prd{display:flex;flex-wrap:wrap;align-items:stretch;justify-content:flex-start}
-.productList ul.prd > li{transition:all .5s;position:relative;width:calc(33% - 15px);margin-left:20px;margin-bottom:15px;padding:12px 30px 18px;box-shadow:0 0 10px #00000010;border:10px solid transparent;background:var(--wh);border-radius:8px;text-align:center;box-sizing:border-box;cursor:pointer;-webkit-tap-highlight-color:transparent}
+/* .productList ul.prd > li{transition:all .5s;position:relative;width:calc(33% - 15px);margin-left:20px;margin-bottom:15px;padding:12px 30px 18px;box-shadow:0 0 10px #00000010;border:10px solid transparent;background:var(--wh);border-radius:8px;text-align:center;box-sizing:border-box;cursor:pointer;-webkit-tap-highlight-color:transparent} */
+.productList ul.prd > li{transition:all .5s;position:relative;width:calc(20% - 15px);margin-left:20px;margin-bottom:15px;padding:12px 30px 18px;box-shadow:0 0 10px #00000010;border:10px solid transparent;background:var(--wh);border-radius:8px;text-align:center;box-sizing:border-box;cursor:pointer;-webkit-tap-highlight-color:transparent}
 .productList ul.prd > li .infor .thumb{padding:25px 0 0}
 .productList ul.prd > li.soldout{cursor:auto;overflow:hidden}
 .productList ul.prd > li.soldout:before{position:absolute;display:flex;align-items:center;justify-content:center;left:0;top:0;right:0;bottom:0;width:100%;height:100%;background:rgba(0,0,0,.4);color:var(--wh);font-size:24px;font-weight:700;content:'SOLD OUT'}
@@ -200,14 +204,16 @@ textarea::-moz-input-placeholder{color:#aaa}
 .productList .subj img{height:20px;display:inline-block;padding:0 5px 0 0;image-rendering:-webkit-optimize-contrast}
 /* shop2 */
 .shop2 #container{background:#f3f3f3;padding:0;}
-.shop2 #container > .innerWidth{padding:15px 20px}
+/* .shop2 #container > .innerWidth{padding:15px 20px} */
+.shop2 #container > .innerWidth{padding:110px 0 0}
 .shop2 .resultBox{padding:0}
-.shop2 .resultSide{border:1px solid #eee;box-shadow:none;padding:0}
+.shop2 .resultSide{border:1px solid #eee;padding:0;width:100%;}
 .shop2 .resultSide .totalBox{padding:0}
 .shop2 .resultSection.inm{border:0}
 .shop2 .productList ul.prd > li{padding:0}
 .shop2 .productList .subj span{font-size:13px;line-height:1.8;font-weight:400;color:#999}
-.shop2 .productList ul.prd > li .infor .thumb{padding:35px 20px 15px;transition:all .5s}
+/* .shop2 .productList ul.prd > li .infor .thumb{padding:35px 20px 15px;transition:all .5s} */
+.shop2 .productList ul.prd > li .infor .thumb{padding:0px 20px 10px;transition:all .5s}
 .shop2 .productList ul.prd > li.active .infor .thumb,
 .shop2 .productList ul.prd > li .infor .thumb:hover{transform:scale(1.1)}
 .shop2 .productList ul.prd > li.active,
@@ -242,7 +248,7 @@ textarea::-moz-input-placeholder{color:#aaa}
 }
 /* side menu */
 .scroll-wrapper.resultBox{padding:8px!important}
-.resultBox{height:calc(100% - 0px - 180px)}
+/* .resultBox{height:calc(100% - 0px - 180px)} */
 .scroll-wrapper.addList:before,
 .scroll-wrapper.addList:after{position:absolute;z-index:1;left:0;right:0;height:15px;opacity:0;visibility:hidden;transition:all 0.1s ease;content:''}
 .scroll-wrapper.addList:before{top:0;background:-moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);background:-webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);background:linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0)}
@@ -258,6 +264,7 @@ textarea::-moz-input-placeholder{color:#aaa}
 .resultBox.notSelected{height:calc(100% - 54px)}
 .resultBox.notSelected .notSelectedMsg{display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;text-align:center}
 .resultBox.notSelected .notSelectedMsg i{color:darkgray;margin-bottom:10px}
+.resultBox.selected{border:1px solid orange;}
 .resultHead{height:45px;text-align:center;padding:13px;color:var(--wh);background:var(--main)}
 .resultHead > img{padding:15px;width:130px}
 .sectionHead{padding:10px 15px;background:#51a7e0;color:var(--wh)}
@@ -265,7 +272,7 @@ textarea::-moz-input-placeholder{color:#aaa}
 .resultSection.inm ul{border:none}
 .resultSection.type{flex:1;overflow:hidden}
 .resultSide .totalBox{overflow:hidden;padding:0 8px}
-.resultSide.selected .selected{display:flex;flex-direction:column;overflow:hidden}
+.resultSide.selected .selected{display:flex;flex-direction:row;overflow:hidden}
 .resultSide.selected .notSelected{display:none}
 .resultSide.selected .totalBox{display:block}
 .resultSide.notSelected .selected{display:none}
